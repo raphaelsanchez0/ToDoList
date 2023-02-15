@@ -4,7 +4,7 @@
     --darkest: #111827;
     --grey: #6B7280;
     --light: #EEE;
-    --pink: #EC4899;
+    --blue: #353ef0;
     --purple: #8b5cf6;
 }
 
@@ -64,10 +64,10 @@ button {
 }
 
 #new-task-submit {
-    color: var(--pink);
+    color: var(--blue);
     font-size: 1.25rem;
     font-weight: 700;
-    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    background-image: linear-gradient(to right, var(--blue), var(--purple));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
@@ -110,6 +110,11 @@ main {
     margin-bottom: 1rem;
 }
 
+#tasks .task .content {
+    flex: 1 1 0%;
+
+}
+
 #tasks .task .content .text {
     color: var(--light);
     font-size: 1.125rem;
@@ -120,8 +125,9 @@ main {
 }
 
 #tasks .task .content .text:not(:read-only) {
-    color: var(--pink)
+    color: var(--blue);
 }
+
 
 #tasks .task .actions {
     display: flex;
@@ -147,11 +153,15 @@ main {
 }
 
 .task .actions .edit {
-    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    background-image: linear-gradient(to right, var(--blue), var(--purple));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .task .actions .delete {
     color: crimson;
+}
+
+.text{
+    color:white;
 }
